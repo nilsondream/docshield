@@ -75,7 +75,7 @@ const Reviews = () => {
                     The Docshield difference
                 </h2>
             </div>
-            <div className="-mt-[50vh] max-md:-mt-[25vh] select-none">
+            <div className="-mt-[100vh] max-md:-mt-[25vh] select-none">
                 <div ref={sectionRef} className="relative h-screen overflow-hidden">
                     <div
                         ref={trackRef}
