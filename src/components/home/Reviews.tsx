@@ -84,7 +84,7 @@ const Reviews = () => {
                         {testimonialsData.map((item, i) => (
                             <div key={i} className="mx-6 shrink-0">
                                 <div
-                                    className={`${item.color} p-5 rounded-3xl aspect-3/4 w-80 flex flex-col justify-between`}
+                                    className={`${item.color} p-7 rounded-3xl aspect-3/4 w-80 flex flex-col justify-between`}
                                 >
                                     <p className="text-2xl">{item.quote}</p>
 
