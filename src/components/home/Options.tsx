@@ -4,16 +4,16 @@ import { Button } from "../ui/button"
 const Options = () => {
     return (
         <section className="py-40">
-            <div className="max-w-5xl mx-auto space-y-15">
+            <div className="max-w-5xl mx-auto space-y-15 max-md:px-5">
                 <div className="text-center space-y-5">
-                    <h2 className="text-5xl text-balance tracking-tight font-medium">
+                    <h2 className="text-5xl max-md:text-3xl text-balance tracking-tight font-medium">
                         Shop coverage options in <br /> New York
                     </h2>
                     <p className="w-80 mx-auto">
                         Instantly see tailored malpractice quotes for your state and specialty.
                     </p>
                 </div>
-                <div className="grid grid-cols-[1.25fr_1fr_1fr] gap-2">
+                <div className="grid grid-cols-[1.25fr_1fr_1fr] max-md:grid-cols-1 gap-2">
                     <div className="flex flex-col gap-10 justify-between bg-blue-50 rounded-3xl p-7">
                         <div className="space-y-5">
                             <p>Standard Limits</p>

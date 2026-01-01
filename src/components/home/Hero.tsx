@@ -3,10 +3,10 @@ import { Button } from "../ui/button"
 const Hero = () => {
     return (
         <section className="relative">
-            <div className="relative z-5 max-w-5xl mx-auto">
+            <div className="relative z-5 max-w-5xl mx-auto max-md:px-5">
                 <div className="flex flex-col gap-15 items-center">
-                    <div className="text-white text-center space-y-5 mt-40">
-                        <h1 className="text-6xl text-balance tracking-tight font-medium">
+                    <div className="text-white text-center space-y-5 mt-40 max-md:mt-30">
+                        <h1 className="text-6xl max-md:text-5xl max-md:text-wrap text-balance tracking-tight font-medium">
                             The fastest way to get malpractice insurance for less
                         </h1>
                         <p>
@@ -21,7 +21,7 @@ const Hero = () => {
                             </Button>
                         </div>
                     </div>
-                    <div className="h-110">
+                    <div className="h-110 max-md:h-80">
                         <img src="/images/doctor-hero.webp" alt="Docshield" className="h-full w-full object-cover" />
                     </div>
                 </div>

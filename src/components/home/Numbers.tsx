@@ -26,8 +26,8 @@ const numbersData = [
 
 const Numbers = () => {
     return (
-        <section className="pb-20">
-            <div className="max-w-7xl mx-auto flex justify-between">
+        <section className="pb-20 max-md:pb-0">
+            <div className="max-w-7xl mx-auto flex justify-between max-md:grid max-md:grid-cols-2 max-md:px-5 max-md:gap-5">
                 {numbersData.map((item, index) => (
                     <motion.div
                         key={index}
@@ -37,7 +37,7 @@ const Numbers = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: index * 0.15 }}
                     >
-                        <h3 className="text-8xl">
+                        <h3 className="text-8xl max-md:text-7xl">
                             {item.number}
                             {item.percent && <span className="text-6xl">%</span>}
                         </h3>

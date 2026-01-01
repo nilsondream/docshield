@@ -35,9 +35,9 @@ const Faq = () => {
 
     return (
         <section className="py-20 space-y-40">
-            <div className="max-w-3xl mx-auto space-y-15">
+            <div className="max-w-3xl mx-auto space-y-15 max-md:px-5">
                 <div className="text-center space-y-5">
-                    <h2 className="text-5xl text-balance tracking-tight font-medium">
+                    <h2 className="text-5xl max-md:text-3xl text-balance tracking-tight font-medium">
                         Frequently asked questions
                     </h2>
                 </div>
@@ -48,19 +48,19 @@ const Faq = () => {
                                 <h4 className="text-lg">{item.question}</h4>
                                 {openIndex === index ? <MinusCircle size={20} /> : <PlusCircle size={20} />}
                             </div>
-                            <p className={`overflow-hidden opacity-50 mr-40 transition-all ${openIndex === index ? "mt-5 h-auto" : "mt-0 h-0"}`}>{item.answer}</p>
+                            <p className={`overflow-hidden opacity-50 mr-40 max-md:mr-0 transition-all ${openIndex === index ? "mt-5 h-auto" : "mt-0 h-0"}`}>{item.answer}</p>
                         </div>
                     ))}
                 </div>
             </div>
 
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto max-md:overflow-hidden">
                 <div className="relative h-120 grid place-items-center">
                     <div className="absolute z-5 flex flex-col items-center w-3/4 gap-10 mx-auto text-center">
-                        <h3 className="text-8xl font-medium tracking-tight text-balance">
+                        <h3 className="text-8xl max-md:text-6xl font-medium tracking-tight text-balance max-md:text-wrap">
                             15 minutes or less to apply
                         </h3>
-                        <p className="text-balance">
+                        <p className="text-balance max-md:text-wrap">
                             No more digging through your licenses. We index into dozens of federal, state, and private data sources to pre-populate 70%+ of your application.
                         </p>
                         <Button variant="icon" size="lg">
@@ -68,7 +68,7 @@ const Faq = () => {
                             <ArrowRight />
                         </Button>
                     </div>
-                    <img src="/images/blur.webp" alt="Docshield" className="absolute z-0 scale-125 animate-pulse" />
+                    <img src="/images/blur.webp" alt="Docshield" className="absolute z-0 scale-125 w-full h-full object-cover" />
                 </div>
             </div>
         </section>

@@ -71,11 +71,11 @@ const Reviews = () => {
     return (
         <section>
             <div className="mx-auto max-w-5xl sticky top-0 h-screen flex justify-center items-center -z-1">
-                <h2 className="text-[12.5rem] font-medium tracking-tighter text-center leading-45">
+                <h2 className="text-[12.5rem] max-md:px-5 max-md:text-6xl max-md:leading-16 font-medium tracking-tighter text-center leading-45">
                     The Docshield difference
                 </h2>
             </div>
-            <div className="-mt-[100vh] select-none">
+            <div className="-mt-[50vh] max-md:-mt-[25vh] select-none">
                 <div ref={sectionRef} className="relative h-screen overflow-hidden">
                     <div
                         ref={trackRef}
