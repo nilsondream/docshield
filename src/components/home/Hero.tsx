@@ -26,7 +26,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-linear-to-b from-blue-900 to-orange-50 w-full h-full absolute top-0 left-0 z-0"></div>
+            <div className="bg-linear-to-b from-blue-900 to-red-50 w-full h-full absolute top-0 left-0 z-0"></div>
         </section>
     )
 }

@@ -1,3 +1,6 @@
+"use client"
+import { motion } from "framer-motion"
+
 const numbersData = [
     {
         number: 21,
@@ -26,10 +29,20 @@ const Numbers = () => {
         <section className="pb-20">
             <div className="max-w-7xl mx-auto flex justify-between">
                 {numbersData.map((item, index) => (
-                    <div key={index} className="text-center space-y-5">
-                        <h3 className="text-8xl">{item.number}<span className="text-6xl">{item.percent && "%"}</span></h3>
+                    <motion.div
+                        key={index}
+                        className="text-center space-y-5"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: index * 0.15 }}
+                    >
+                        <h3 className="text-8xl">
+                            {item.number}
+                            {item.percent && <span className="text-6xl">%</span>}
+                        </h3>
                         <p>{item.label}</p>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>

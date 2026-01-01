@@ -3,13 +3,13 @@ import { Button } from "../ui/button"
 
 const Options = () => {
     return (
-        <section className="py-20">
+        <section className="py-40">
             <div className="max-w-5xl mx-auto space-y-15">
                 <div className="text-center space-y-5">
                     <h2 className="text-5xl text-balance tracking-tight font-medium">
                         Shop coverage options in <br /> New York
                     </h2>
-                    <p>
+                    <p className="w-80 mx-auto">
                         Instantly see tailored malpractice quotes for your state and specialty.
                     </p>
                 </div>
@@ -20,7 +20,7 @@ const Options = () => {
                             <h3 className="text-5xl">$1.3M/$3.9M</h3>
                             <p>Per-claim / Per-year</p>
                         </div>
-                        <ShieldCheck size={50} strokeWidth={1.5} />
+                        <ShieldCheck size={48} strokeWidth={1.5} />
                     </div>
                     <div className="flex flex-col gap-10 justify-between bg-blue-50 rounded-3xl p-7">
                         <div className="space-y-5">
@@ -34,7 +34,7 @@ const Options = () => {
                                 <p>Affordable</p>
                             </div>
                             <div className="w-full h-10 rounded-full bg-background overflow-hidden">
-                                <div className="h-full w-20 bg-foreground"></div>
+                                <div className="h-full w-1/5 bg-foreground"></div>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const Options = () => {
                                 <p>Highest</p>
                             </div>
                             <div className="w-full h-10 rounded-full bg-background overflow-hidden">
-                                <div className="h-full w-20 bg-foreground"></div>
+                                <div className="h-full w-3/4 bg-foreground"></div>
                             </div>
                         </div>
                     </div>

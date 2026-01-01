@@ -1,4 +1,5 @@
 import Clients from "@/components/home/Clients";
+import Faq from "@/components/home/Faq";
 import Hero from "@/components/home/Hero";
 import Numbers from "@/components/home/Numbers";
 import Options from "@/components/home/Options";
@@ -12,6 +13,7 @@ export default function Home() {
       <Reviews />
       <Numbers />
       <Options />
+      <Faq />
     </main>
   );
 }
